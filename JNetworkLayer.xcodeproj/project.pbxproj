@@ -18,6 +18,9 @@
 		6BA33BE726910E2B006967C2 /* JNWebserviceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA33BE626910E2B006967C2 /* JNWebserviceConstants.swift */; };
 		6BA33BE926910E61006967C2 /* JNWebserviceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA33BE826910E61006967C2 /* JNWebserviceHelper.swift */; };
 		6BA33BEC26910F18006967C2 /* JNJSONResponseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA33BEB26910F18006967C2 /* JNJSONResponseDecoder.swift */; };
+		6BA36D082692142F00DEE404 /* CovidAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA36D072692142F00DEE404 /* CovidAPI.swift */; };
+		6BA36D0A2692167100DEE404 /* CovidServicesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA36D092692167100DEE404 /* CovidServicesRequest.swift */; };
+		6BA36D0D269216AD00DEE404 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA36D0C269216AD00DEE404 /* Country.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		6BA33BE626910E2B006967C2 /* JNWebserviceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JNWebserviceConstants.swift; sourceTree = "<group>"; };
 		6BA33BE826910E61006967C2 /* JNWebserviceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JNWebserviceHelper.swift; sourceTree = "<group>"; };
 		6BA33BEB26910F18006967C2 /* JNJSONResponseDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JNJSONResponseDecoder.swift; sourceTree = "<group>"; };
+		6BA36D072692142F00DEE404 /* CovidAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidAPI.swift; sourceTree = "<group>"; };
+		6BA36D092692167100DEE404 /* CovidServicesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidServicesRequest.swift; sourceTree = "<group>"; };
+		6BA36D0C269216AD00DEE404 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,8 @@
 		6BA33BAB2690F7F6006967C2 /* JNetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				6BA36D0B269216A100DEE404 /* Model */,
+				6BA36D052692120300DEE404 /* AppRequest */,
 				6BA33BB52690F7F8006967C2 /* Assets.xcassets */,
 				6BA33BE126910D5B006967C2 /* Delegate */,
 				6BA33BBA2690F7F8006967C2 /* Info.plist */,
@@ -175,6 +183,23 @@
 				6BA33BEB26910F18006967C2 /* JNJSONResponseDecoder.swift */,
 			);
 			path = Decoder;
+			sourceTree = "<group>";
+		};
+		6BA36D052692120300DEE404 /* AppRequest */ = {
+			isa = PBXGroup;
+			children = (
+				6BA36D072692142F00DEE404 /* CovidAPI.swift */,
+				6BA36D092692167100DEE404 /* CovidServicesRequest.swift */,
+			);
+			path = AppRequest;
+			sourceTree = "<group>";
+		};
+		6BA36D0B269216A100DEE404 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6BA36D0C269216AD00DEE404 /* Country.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,11 +333,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BA33BAD2690F7F6006967C2 /* AppDelegate.swift in Sources */,
+				6BA36D0D269216AD00DEE404 /* Country.swift in Sources */,
 				6BA33BE926910E61006967C2 /* JNWebserviceHelper.swift in Sources */,
 				6BA33BE526910DCA006967C2 /* JNWebserviceConfig.swift in Sources */,
 				6BA33BEC26910F18006967C2 /* JNJSONResponseDecoder.swift in Sources */,
 				6BA33BE726910E2B006967C2 /* JNWebserviceConstants.swift in Sources */,
 				6BA33BDF2690F8C7006967C2 /* InitViewController.swift in Sources */,
+				6BA36D082692142F00DEE404 /* CovidAPI.swift in Sources */,
+				6BA36D0A2692167100DEE404 /* CovidServicesRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

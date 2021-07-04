@@ -6,7 +6,6 @@
 //
 
 struct JNWebserviceConstants {
-    static let baseURL = "https://maps.googleapis.com/maps/api/place"
-    static let placesAPI = "/nearbysearch/json?"
-    static let imageAPI = "/photo?"
+    static let baseURL = "https://corona.lmao.ninja/v2"
+    static let countriesAPI = "/countries?"
 }
