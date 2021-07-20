@@ -171,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				6BA33BE426910DCA006967C2 /* JNWebserviceConfig.swift */,
-				6BA33BE626910E2B006967C2 /* JNWebserviceConstants.swift */,
 				6BA33BE826910E61006967C2 /* JNWebserviceHelper.swift */,
 			);
 			path = WebServices;
@@ -188,6 +187,7 @@
 		6BA36D052692120300DEE404 /* AppRequest */ = {
 			isa = PBXGroup;
 			children = (
+				6BA33BE626910E2B006967C2 /* JNWebserviceConstants.swift */,
 				6BA36D072692142F00DEE404 /* CovidAPI.swift */,
 				6BA36D092692167100DEE404 /* CovidServicesRequest.swift */,
 			);
