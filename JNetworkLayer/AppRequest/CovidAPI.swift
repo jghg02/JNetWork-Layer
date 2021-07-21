@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import JNetworking
 
 struct CovidAPIQueryParams {
     let yesterday: Bool = true

@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B58AE2926A769D7008CF016 /* JNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 6B58AE2826A769D7008CF016 /* JNetworking */; };
 		6BA33BAD2690F7F6006967C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA33BAC2690F7F6006967C2 /* AppDelegate.swift */; };
 		6BA33BB62690F7F8006967C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BA33BB52690F7F8006967C2 /* Assets.xcassets */; };
 		6BA33BB92690F7F8006967C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BA33BB72690F7F8006967C2 /* LaunchScreen.storyboard */; };
@@ -14,10 +15,7 @@
 		6BA33BCF2690F7F9006967C2 /* JNetworkLayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA33BCE2690F7F9006967C2 /* JNetworkLayerUITests.swift */; };
 		6BA33BDF2690F8C7006967C2 /* InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA33BDD2690F8C7006967C2 /* InitViewController.swift */; };
 		6BA33BE02690F8C7006967C2 /* InitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA33BDE2690F8C7006967C2 /* InitViewController.xib */; };
-		6BA33BE526910DCA006967C2 /* JNWebserviceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA33BE426910DCA006967C2 /* JNWebserviceConfig.swift */; };
 		6BA33BE726910E2B006967C2 /* JNWebserviceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA33BE626910E2B006967C2 /* JNWebserviceConstants.swift */; };
-		6BA33BE926910E61006967C2 /* JNWebserviceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA33BE826910E61006967C2 /* JNWebserviceHelper.swift */; };
-		6BA33BEC26910F18006967C2 /* JNJSONResponseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA33BEB26910F18006967C2 /* JNJSONResponseDecoder.swift */; };
 		6BA36D082692142F00DEE404 /* CovidAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA36D072692142F00DEE404 /* CovidAPI.swift */; };
 		6BA36D0A2692167100DEE404 /* CovidServicesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA36D092692167100DEE404 /* CovidServicesRequest.swift */; };
 		6BA36D0D269216AD00DEE404 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA36D0C269216AD00DEE404 /* Country.swift */; };
@@ -54,10 +52,7 @@
 		6BA33BD02690F7F9006967C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BA33BDD2690F8C7006967C2 /* InitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitViewController.swift; sourceTree = "<group>"; };
 		6BA33BDE2690F8C7006967C2 /* InitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitViewController.xib; sourceTree = "<group>"; };
-		6BA33BE426910DCA006967C2 /* JNWebserviceConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JNWebserviceConfig.swift; sourceTree = "<group>"; };
 		6BA33BE626910E2B006967C2 /* JNWebserviceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JNWebserviceConstants.swift; sourceTree = "<group>"; };
-		6BA33BE826910E61006967C2 /* JNWebserviceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JNWebserviceHelper.swift; sourceTree = "<group>"; };
-		6BA33BEB26910F18006967C2 /* JNJSONResponseDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JNJSONResponseDecoder.swift; sourceTree = "<group>"; };
 		6BA36D072692142F00DEE404 /* CovidAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidAPI.swift; sourceTree = "<group>"; };
 		6BA36D092692167100DEE404 /* CovidServicesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidServicesRequest.swift; sourceTree = "<group>"; };
 		6BA36D0C269216AD00DEE404 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
@@ -68,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B58AE2926A769D7008CF016 /* JNetworking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +114,6 @@
 				6BA33BBA2690F7F8006967C2 /* Info.plist */,
 				6BA33BDC2690F8A0006967C2 /* InitViewController */,
 				6BA33BB72690F7F8006967C2 /* LaunchScreen.storyboard */,
-				6BA33BE226910D84006967C2 /* JNetWorkLayer */,
 			);
 			path = JNetworkLayer;
 			sourceTree = "<group>";
@@ -158,32 +153,6 @@
 			path = Delegate;
 			sourceTree = "<group>";
 		};
-		6BA33BE226910D84006967C2 /* JNetWorkLayer */ = {
-			isa = PBXGroup;
-			children = (
-				6BA33BEA26910F01006967C2 /* Decoder */,
-				6BA33BE326910D95006967C2 /* WebServices */,
-			);
-			path = JNetWorkLayer;
-			sourceTree = "<group>";
-		};
-		6BA33BE326910D95006967C2 /* WebServices */ = {
-			isa = PBXGroup;
-			children = (
-				6BA33BE426910DCA006967C2 /* JNWebserviceConfig.swift */,
-				6BA33BE826910E61006967C2 /* JNWebserviceHelper.swift */,
-			);
-			path = WebServices;
-			sourceTree = "<group>";
-		};
-		6BA33BEA26910F01006967C2 /* Decoder */ = {
-			isa = PBXGroup;
-			children = (
-				6BA33BEB26910F18006967C2 /* JNJSONResponseDecoder.swift */,
-			);
-			path = Decoder;
-			sourceTree = "<group>";
-		};
 		6BA36D052692120300DEE404 /* AppRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +187,9 @@
 			dependencies = (
 			);
 			name = JNetworkLayer;
+			packageProductDependencies = (
+				6B58AE2826A769D7008CF016 /* JNetworking */,
+			);
 			productName = JNetworkLayer;
 			productReference = 6BA33BA92690F7F6006967C2 /* JNetworkLayer.app */;
 			productType = "com.apple.product-type.application";
@@ -289,6 +261,9 @@
 				Base,
 			);
 			mainGroup = 6BA33BA02690F7F6006967C2;
+			packageReferences = (
+				6B58AE2726A769D7008CF016 /* XCRemoteSwiftPackageReference "JNetworking" */,
+			);
 			productRefGroup = 6BA33BAA2690F7F6006967C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -334,9 +309,6 @@
 			files = (
 				6BA33BAD2690F7F6006967C2 /* AppDelegate.swift in Sources */,
 				6BA36D0D269216AD00DEE404 /* Country.swift in Sources */,
-				6BA33BE926910E61006967C2 /* JNWebserviceHelper.swift in Sources */,
-				6BA33BE526910DCA006967C2 /* JNWebserviceConfig.swift in Sources */,
-				6BA33BEC26910F18006967C2 /* JNJSONResponseDecoder.swift in Sources */,
 				6BA33BE726910E2B006967C2 /* JNWebserviceConstants.swift in Sources */,
 				6BA33BDF2690F8C7006967C2 /* InitViewController.swift in Sources */,
 				6BA36D082692142F00DEE404 /* CovidAPI.swift in Sources */,
@@ -661,6 +633,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6B58AE2726A769D7008CF016 /* XCRemoteSwiftPackageReference "JNetworking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jghg02/JNetworking";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6B58AE2826A769D7008CF016 /* JNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B58AE2726A769D7008CF016 /* XCRemoteSwiftPackageReference "JNetworking" */;
+			productName = JNetworking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6BA33BA12690F7F6006967C2 /* Project object */;
 }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import JNetworking
 
 typealias GetAllCountriesResponse = (Result<[Country], Error>) -> Void
 
